@@ -1,0 +1,89 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row { /*fila*/
+    display: flex; /*para poner todo en la misma fila*/
+    justify-content: space-between;  /*reparte el espacio entre lo que haya en esa fila, deja el mismo espacio entre unos y otros*/
+    align-items: center; 
+}
+
+header nav ul, header nav li {
+    padding: 0;
+    margin: 0;
+}
+
+header nav li {
+    list-style-type: none;
+    float: left;
+    position: relative;
+    margin-right: 20px;
+}
+
+header nav li img {
+    margin-right: 10px;
+}
+
+header nav li li {
+    margin-left: 0;
+    padding: 10px;
+    width: 240px;
+    display: flex;
+    align-items: center;
+    
+}
+
+header nav li:hover{
+    border-top: solid 4px #ffbc0f;
+}
+
+header nav li:hover li {
+    border: none;
+}
+
+header nav li li:hover {
+    background-color: #ffbc0f;
+    border-radius: 6px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav ul ul {
+    display: none;
+    position: absolute;
+    margin-left: -10px;
+    background-color: white;
+    width: 260px;
+    padding-top: 16px;
+}
+
+header nav ul li:hover ul {
+    display: block;
+}
+
+.grande {
+    background-image: url(../img/grande.jpg);
+    height: 560px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    border-radius: 2px;
+    border: none;
+    background-color: gainsboro;
+    padding: 13px 40px;
+}
+
+.btn-naranja {
+    background-color: #ffbc0f;
+    border: 0;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 16px;
+}
