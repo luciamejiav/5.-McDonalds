@@ -2,11 +2,27 @@
     width: 80%;
     margin: 0 auto;
 }
+.rowcv {
+    display: flex; /*para poner todo en la misma fila*/
+    justify-content: space-between;  /*reparte el espacio entre lo que haya en esa fila, deja el mismo espacio entre unos y otros*/
+    align-items: center;  
+}
 
 .row { /*fila*/
     display: flex; /*para poner todo en la misma fila*/
+    flex-wrap: wrap;
     justify-content: space-between;  /*reparte el espacio entre lo que haya en esa fila, deja el mismo espacio entre unos y otros*/
-    align-items: center; 
+}
+
+.row-around{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.row-footer {
+    align-items: center;
+    padding: 0 550px;
 }
 
 header nav ul, header nav li {
@@ -69,8 +85,6 @@ header nav ul li:hover ul {
     background-image: url(../img/grande.jpg);
     height: 560px;
     background-size: cover;
-    display: flex;
-    align-items: center;
 }
 
 .btn {
@@ -86,4 +100,67 @@ header nav ul li:hover ul {
     padding: 4px 10px;
     border-radius: 4px;
     font-size: 16px;
+}
+
+.colum-2 {
+    width: 49%;
+    display: flex;
+    margin-top: 20px;
+
+}
+
+.colum-3 {
+    width: 32%;
+    margin-top: 20px;
+    display: flex;
+}
+
+.card { 
+    border-radius: 16px;
+    box-shadow: 0 0 20px gainsboro;
+    text-align: center;
+    position: relative;
+    padding-bottom: 40px;
+}
+.card img {
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+
+.d-flex-v {
+    display: flex;
+    align-items: center;
+}
+
+.pt-10{
+    padding: 10px;
+}
+
+.bg-naranja {
+    background-color: #ffbc0f;
+    width: 100%; 
+}
+
+.card button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.left {
+    float: left;
+    width: 20%;
+    padding-right: 55px;
+}
+.right {
+    width: 60%;
+    float: left;
+}
+
+.center {
+    width: 70%;
+    padding: 20px 280px;
 }
